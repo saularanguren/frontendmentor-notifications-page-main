@@ -4,7 +4,7 @@
 
 ## Welcome! 👋
 
-Thanks for checking out this front-end coding challenge. [Notifications page live]() 🚀
+Thanks for checking out this front-end coding challenge. [Notifications page live](https://frontendmentor-notifications-page-main.vercel.app/) 🚀
 
 **This challenge was developed with Astro, TailwindCSS and Vite.**
 
@@ -12,5 +12,5 @@ Thanks for checking out this front-end coding challenge. [Notifications page liv
 
 ```
 pnpm install
-pnpm run dev
+pnpm dev
 ```
