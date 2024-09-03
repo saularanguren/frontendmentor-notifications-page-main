@@ -1,12 +1,20 @@
 ---
-import AbandonNotification from "./Abandon-Notification.astro";
-import FollowNotification from "./Follow-Notification.astro";
 import HeaderCard from "./Header-Card.astro";
-import JoinedNotificitacion from "./Joined-Notificitacion.astro";
+import FollowNotification from "./Follow-Notification.astro";
 import MessageNotification from "./Message-Notification.astro";
 import PictureNotification from "./Picture-Notification.astro";
+import AbandonNotification from "./Abandon-Notification.astro";
+import JoinedNotificitacion from "./Joined-Notificitacion.astro";
 import ReactedLongNotification from "./Reacted-Long-Notification.astro";
 import ReactedShortNotification from "./Reacted-Short-Notification.astro";
+import ImageChess from "../assets/images/image-chess.webp";
+import AnnaKim from "../assets/images/avatar-anna-kim.webp";
+import MarkWebber from "../assets/images/avatar-mark-webber.webp";
+import AngelaGray from "../assets/images/avatar-angela-gray.webp";
+import KimberlySmith from "../assets/images/avatar-kimberly-smith.webp";
+import JacobThompson from "../assets/images/avatar-jacob-thompson.webp";
+import NathanPeterson from "../assets/images/avatar-nathan-peterson.webp";
+import RizkyHasanuddin from "../assets/images/avatar-rizky-hasanuddin.webp";
 ---
 
 <main class="w-[23.4375rem] h-auto flex flex-col items-start justify-start px-4 py-6 gap-3 bg-White">
@@ -16,7 +24,7 @@ import ReactedShortNotification from "./Reacted-Short-Notification.astro";
     />
 
     <ReactedShortNotification 
-        src="/src/assets/images/avatar-mark-webber.webp"
+        src={MarkWebber.src}
         alt="Imagen Avatar Mark Webber"
         name="Mark Webber"
         post="My first tournament today!"
@@ -24,14 +32,14 @@ import ReactedShortNotification from "./Reacted-Short-Notification.astro";
     />
 
     <FollowNotification
-        src="/src/assets/images/avatar-angela-gray.webp"
+        src={AngelaGray.src}
         alt="Imagen Avatar Angela Gray"
         name="Angela Gray"
         time="5m ago"
     />
 
     <JoinedNotificitacion
-        src="/src/assets/images/avatar-jacob-thompson.webp"
+        src={JacobThompson.src}
         alt="Imagen Avatar Jacob Thompson"
         nameUser="Jacob Thompson"
         nameGroup="Chess Club"
@@ -39,7 +47,7 @@ import ReactedShortNotification from "./Reacted-Short-Notification.astro";
     />
         
     <MessageNotification 
-        src="/src/assets/images/avatar-rizky-hasanuddin.webp"
+        src={RizkyHasanuddin.src}
         alt="Imagen Avatar Rizky Hasanuddin"        
         name="Rizky Hasanuddin"
         time="5 days ago"
@@ -47,8 +55,8 @@ import ReactedShortNotification from "./Reacted-Short-Notification.astro";
     />
 
     <PictureNotification 
-        srcUser="/src/assets/images/avatar-kimberly-smith.webp"
-        srcPicture="/src/assets/images/image-chess.webp"
+        srcUser={KimberlySmith.src}
+        srcPicture={ImageChess.src}
         altUser="Imagen Avatar Kimberly Smith"
         altPicture="Picture Chess"
         name="Kimberly Smith"
@@ -56,7 +64,7 @@ import ReactedShortNotification from "./Reacted-Short-Notification.astro";
     />
 
     <ReactedLongNotification 
-        src="/src/assets/images/avatar-nathan-peterson.webp"
+        src={NathanPeterson.src}
         alt="Imagen Avatar Nathan Peterson"
         name="Nathan Peterson"
         post1="5 end-game strategies to"
@@ -65,7 +73,7 @@ import ReactedShortNotification from "./Reacted-Short-Notification.astro";
     />
    
     <AbandonNotification
-        src="/src/assets/images/avatar-anna-kim.webp"
+        src={AnnaKim.src}
         alt="Imagen Avatar Anna Kim"
         nameUser="Anna Kim"
         nameGroup="Chess Club"
