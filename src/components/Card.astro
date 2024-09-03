@@ -1,0 +1,75 @@
+---
+import AbandonNotification from "./Abandon-Notification.astro";
+import FollowNotification from "./Follow-Notification.astro";
+import HeaderCard from "./Header-Card.astro";
+import JoinedNotificitacion from "./Joined-Notificitacion.astro";
+import MessageNotification from "./Message-Notification.astro";
+import PictureNotification from "./Picture-Notification.astro";
+import ReactedLongNotification from "./Reacted-Long-Notification.astro";
+import ReactedShortNotification from "./Reacted-Short-Notification.astro";
+---
+
+<main class="w-[23.4375rem] h-auto flex flex-col items-start justify-start px-4 py-6 gap-3 bg-White">
+
+    <HeaderCard
+        number="3"
+    />
+
+    <ReactedShortNotification 
+        src="/src/assets/images/avatar-mark-webber.webp"
+        alt="Imagen Avatar Mark Webber"
+        name="Mark Webber"
+        post="My first tournament today!"
+        time="1m ago"
+    />
+
+    <FollowNotification
+        src="/src/assets/images/avatar-angela-gray.webp"
+        alt="Imagen Avatar Angela Gray"
+        name="Angela Gray"
+        time="5m ago"
+    />
+
+    <JoinedNotificitacion
+        src="/src/assets/images/avatar-jacob-thompson.webp"
+        alt="Imagen Avatar Jacob Thompson"
+        nameUser="Jacob Thompson"
+        nameGroup="Chess Club"
+        time="1 day ago"
+    />
+        
+    <MessageNotification 
+        src="/src/assets/images/avatar-rizky-hasanuddin.webp"
+        alt="Imagen Avatar Rizky Hasanuddin"        
+        name="Rizky Hasanuddin"
+        time="5 days ago"
+        message="Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game."
+    />
+
+    <PictureNotification 
+        srcUser="/src/assets/images/avatar-kimberly-smith.webp"
+        srcPicture="/src/assets/images/image-chess.webp"
+        altUser="Imagen Avatar Kimberly Smith"
+        altPicture="Picture Chess"
+        name="Kimberly Smith"
+        time="1 week ago"
+    />
+
+    <ReactedLongNotification 
+        src="/src/assets/images/avatar-nathan-peterson.webp"
+        alt="Imagen Avatar Nathan Peterson"
+        name="Nathan Peterson"
+        post1="5 end-game strategies to"
+        post2="increase your win rate"    
+        time="2 weeks ago"
+    />
+   
+    <AbandonNotification
+        src="/src/assets/images/avatar-anna-kim.webp"
+        alt="Imagen Avatar Anna Kim"
+        nameUser="Anna Kim"
+        nameGroup="Chess Club"
+        time="2 weeks ago"
+    />
+
+</main>

@@ -1,9 +1,23 @@
 ---
 import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
 ---
 
 <Layout title="Frontend Mentor | Notifications page">
 
-	<h1>Hello Astro</h1>
+	<Card />
 
 </Layout>
+
+<script>
+	const button = document.querySelector('#btn'),
+		  numberHeader = document.querySelector('#number-header'),
+		  notifications = document.querySelectorAll('section'),
+		  circles = document.querySelectorAll('.circle')
+
+	button.addEventListener('click', () => {
+		notifications.forEach(notification => notification.classList.remove('bg-Snow'))
+		circles.forEach(circle => circle.classList.add('hidden'))
+		numberHeader.textContent = '0'
+	})
+</script>

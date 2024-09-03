@@ -1,0 +1,25 @@
+---
+const { src , alt, name, post1, post2, time } = Astro.props;
+---
+<section class="w-[21.4375rem] h-[110px] flex flex-col justify-start items-start p-4 rounded-lg gap-[0.625rem]">
+    <article class="w-[307px] h-[75px] flex justify-start items-start gap-[0.8125rem]">
+
+        <picture class="w-[2.4375rem] h-[2.4375rem] flex justify-start items-center gap-[0.625rem]">
+            <img src={src} alt={alt} class="w-full h-full">
+        </picture>
+    
+        <div class="w-[255px] h-[75px] flex flex-col justify-start items-start gap-[0.1875rem]">
+            <div class="w-[257px] h-[54px] flex justify-start items-center flex-wrap">
+                <h2 class="w-[114px] h-[18px] font-PlusJakartaSansExtraBold text-[0.875rem] text-VeryDarkGreyBlue text-left cursor-pointer hover:text-Blue">{name}</h2>
+                <p class="w-[6.4375rem] h-[1.125rem] font-PlusJakartaSansMedium text-[0.875rem] text-DarkGreyBlue text-left ml-[0.3125rem]">reacted to your</p>
+                <p class="w-[4.875rem] h-[1.125rem] font-PlusJakartaSansMedium text-[0.875rem] text-DarkGreyBlue text-left">recent post</p>
+                <p class="w-[174px] h-[18px] font-PlusJakartaSansVariableWght font-bold text-[0.875rem] text-DarkGreyBlue text-left ml-[0.3125rem] duration-700 cursor-pointer hover:text-Blue">{post1}</p>
+                <p class="w-[148px] h-[18px] font-PlusJakartaSansVariableWght font-bold text-[0.875rem] text-DarkGreyBlue text-left duration-700 cursor-pointer hover:text-Blue">{post2}</p>
+                <div></div>
+            </div>
+
+            <p class="w-[255px] h-[18px] font-PlusJakartaSansMedium text-[0.875rem] text-GreyBlue text-left">{time}</p>
+        </div>
+    
+    </article>
+</section>

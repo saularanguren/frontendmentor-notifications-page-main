@@ -13,7 +13,35 @@ const { title } = Astro.props;
 		<!-- ============================= title ============================= -->
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="flex items-center justify-center min-h-screen sm:bg-Snow">
 		<slot />
 	</body>
 </html>
+
+<style is:global>
+	@tailwind base;
+
+	@layer base {
+		* {
+			@apply m-0 p-0 box-border;
+		}
+
+		@font-face {
+			font-family: "PlusJakartaSans-VariableWght";
+			src: url(../assets/fonts/PlusJakartaSans-VariableFont_wght.ttf);
+		}
+
+		@font-face {
+			font-family: "PlusJakartaSans-Medium";
+			src: url(../assets/fonts/static/PlusJakartaSans-Medium.ttf);
+		}
+
+		@font-face {
+			font-family: "PlusJakartaSans-ExtraBold";
+			src: url(../assets/fonts/static/PlusJakartaSans-ExtraBold.ttf);
+		}
+	}
+
+	@tailwind components;
+	@tailwind utilities;
+</style>
